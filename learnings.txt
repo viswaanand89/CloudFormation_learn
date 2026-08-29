@@ -1,0 +1,26 @@
+Template Format -
+
+It can be in Yaml or json
+
+It consists of several sections ,
+
+but the mandatory one is Resource ,
+
+More Details : https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html
+
+For Each Resources Refer this URL: Important : https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-template-resource-type-ref.html
+
+Syntax for Resources: 
+
+More Details : https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
+
+In Each Resource Document we can basic format for Resources and required properties marked as Required
+
+Highlevel Format 
+
+Resources:
+    <logicalResourcename>:
+        Type: AWS::<servicename>::<ResourceType>
+        Properties:
+            Propertyname: value
+            
