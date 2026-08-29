@@ -1,0 +1,19 @@
+While Creating VPC Stacks , Below Errorers Related to Permission was Observed,
+
+	
+1. Resource handler returned message: "You are not authorized to perform this operation. 
+User: arn:aws:sts::211107604526:assumed-role/CloudFormation-role-learning/AWSCloudFormation is not authorized to perform:
+ ec2:ModifyVpcAttribute on resource: arn:aws:ec2:us-east-1:211107604526:vpc/vpc-0cbff7072664d9248 
+ because no identity-based policy allows the ec2:ModifyVpcAttribute action. 
+
+2. Resource handler returned message: "Encountered a permissions error performing a tagging operation, 
+ please add required tag permissions. See https://repost.aws/knowledge-center/cloudformation-tagging-permission-error 
+ for how to resolve.
+ Resource handler returned message: "Did not have IAM permissions to process tags on AWS::EC2::VPC resource.""
+
+3. Resource handler returned message: "You are not authorized to perform this operation.
+ User: arn:aws:sts::211107604526:assumed-role/CloudFormation-role-learning/AWSCloudFormation 
+ is not authorized to perform: ec2:DescribeVpcs because no identity-based policy allows the ec2:DescribeVpcs action
+ (Service: Ec2, Status Code: 403, Request ID: 88da847e-c1ca-4634-9a4b-2a3bca477478) (SDK Attempt Count: 1)"
+
+Resolution : Update CloudFormation Stack Role with Required Permissions,
