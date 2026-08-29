@@ -17,3 +17,11 @@ User: arn:aws:sts::211107604526:assumed-role/CloudFormation-role-learning/AWSClo
  (Service: Ec2, Status Code: 403, Request ID: 88da847e-c1ca-4634-9a4b-2a3bca477478) (SDK Attempt Count: 1)"
 
 Resolution : Update CloudFormation Stack Role with Required Permissions,
+
+Below Errors due to syntax issue in resource template, 
+
+1. 	
+Failed to create changeset. Couldn't call cloudformation for stack: vpcstack and changeset: 
+cloudformation-auto-sync-62862cb8-7ebe-4f88-80c4-b4fbca080ff8 because of a validation error. 
+The error was Template format error: YAML not well-formed. (line 9, column 5) 
+(Service: AmazonCloudFormation; Status Code: 400; Error Code: ValidationError; Request ID: 4dc8ca76-97b5-4d15-903b-c0418114fb0c; Proxy: null)
