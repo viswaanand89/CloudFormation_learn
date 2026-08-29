@@ -9,6 +9,33 @@ but the mandatory one is Resource ,
 More Details : https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html
 
 For Each Resources Refer this URL: Important : https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-template-resource-type-ref.html
+We also have option of Syncing from git : https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/git-sync.html 
+
+When Creating Stacks in CloudFormation via AWS 3 Options are there
+
+1. Via S3
+2. From Template
+3. Via git
+
+In this We will primarily use Git though :
+
+To setup Git,
+
+1. We need to link git URL , To Link GitURL we need to add connections
+
+
+For Adding Connections in Console , navigate to Developer Tools > Connections 
+
+https://us-east-1.console.aws.amazon.com/codesuite/settings/connections/create?region=us-east-1#
+
+
+Issues: 
+
+- After adding connection in Developer if repository is not poping up , in developer ensure to connect Install apps
+
+For Git Sync How it Works : https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/git-sync-concepts-terms.html
+
+We would also need a deployment yaml path with reference to templates(Resources/Modules) and provide the path while setting up git
 
 Syntax for Resources: 
 
@@ -23,4 +50,4 @@ Resources:
         Type: AWS::<servicename>::<ResourceType>
         Properties:
             Propertyname: value
-            
+
