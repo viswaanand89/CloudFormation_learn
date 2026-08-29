@@ -13,3 +13,10 @@ Resources:
       Tags:
         - Key: Name
           Value: Secondvpc
+outputs:
+  vpc1id:
+    Description: VPC ID of first VPC
+    Value: !Ref vpc1
+  vpc2id:
+    Description: VPC ID of second VPC
+    Value: !Ref vpc2
