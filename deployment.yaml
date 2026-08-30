@@ -1,4 +1,4 @@
 template-file-path: ./vpc.yaml
 template-file-path: ./subnet.yaml
 parameters:
-  vpc1Id: outputs.vpc1Id
+  vpc1Id: !Ref vpc1id
