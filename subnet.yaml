@@ -1,6 +1,8 @@
 Parameters:
   vpc1Id:
+    Description: VPC ID of first vpc
     Type: String
+    Default: null
 Resources:
    subnet1:
      Type: AWS::EC2::Subnet
