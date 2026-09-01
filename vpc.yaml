@@ -18,7 +18,12 @@ Resources:
      Properties:
       VpcId: !Ref vpc1
       CidrBlock: 10.0.1.0/24
-    
+   subnet2:
+     Type: AWS::EC2::Subnet
+     Properties:
+      VpcId: !getatt vpc2.VpcId
+      CidrBlock: 10.0.2.0/24
+
 Outputs:
   vpc1id:
     Description: VPC ID of first VPC
