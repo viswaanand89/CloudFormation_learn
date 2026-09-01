@@ -8,7 +8,12 @@ but the mandatory one is Resource ,
 
 More Details : https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html
 
-For Each Resources Refer this URL: Important : https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-template-resource-type-ref.html
+For Each Resources Refer this URL: Important : https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-template-resource-type-ref.html 
+Each Resources will also have Return Values which can be used as input for other dependent resource,
+
+Ex : Subnet requiring VPCID
+
+For different Stacks we can use import and export functions and for same stack use GetAtt
 We also have option of Syncing from git : https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/git-sync.html 
 
 When Creating Stacks in CloudFormation via AWS 3 Options are there
