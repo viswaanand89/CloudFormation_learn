@@ -1,2 +1,4 @@
 template-file-path: ./vpc.yaml
 template-file-path: ./subnet.yaml
+Parameters:
+    vpc1Id: !GetAtt vpc1.VpcId

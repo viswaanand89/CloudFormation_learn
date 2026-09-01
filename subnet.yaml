@@ -5,5 +5,5 @@ Resources:
    subnet1:
      Type: AWS::EC2::Subnet
      Properties:
-      VpcId: !ImportValue vpc1id
+      VpcId: !Ref vpc1Id
       CidrBlock: 10.0.1.0/24
