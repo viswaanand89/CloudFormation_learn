@@ -19,7 +19,7 @@ Resources:
       VpcId: !Ref vpc1
       CidrBlock: 10.0.1.0/24
     
-outputs:
+Outputs:
   vpc1id:
     Description: VPC ID of first VPC
     Value: !Ref vpc1
