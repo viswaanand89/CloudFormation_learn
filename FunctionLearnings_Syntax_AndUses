@@ -1,0 +1,8 @@
+Some o the Functions wil be mentioned in this Doc but for full comprehensive refer this Link : https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference.html
+
+
+GetAtt : returns the value of an attribute from a resource in the template.
+
+Syntax : !GetAtt logicalNameOfResource.attributeName
+
+Example : !GetAtt vpc2.VpcId
