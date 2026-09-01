@@ -18,7 +18,7 @@ outputs:
     Description: VPC ID of first VPC
     Value: !Ref vpc1
     Export:
-      Name: "vpc1id"
+      Name: vpc1id
   vpc2id:
     Description: VPC ID of second VPC
     Value: !Ref vpc2
