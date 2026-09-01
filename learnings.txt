@@ -40,7 +40,10 @@ Issues:
 
 For Git Sync How it Works : https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/git-sync-concepts-terms.html
 
+
 We would also need a deployment yaml path with reference to templates(Resources/Modules) and provide the path while setting up git
+
+The Deploment Yaml works with Just one to one Template yaml
 
 Syntax for Resources: 
 
