@@ -13,6 +13,12 @@ Resources:
       Tags:
         - Key: Name
           Value: Secondvpc
+   subnet1:
+     Type: AWS::EC2::Subnet
+     Properties:
+      VpcId: !Ref vpc1
+      CidrBlock: 10.0.1.0/24
+    
 outputs:
   vpc1id:
     Description: VPC ID of first VPC
