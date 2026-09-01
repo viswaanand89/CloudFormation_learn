@@ -18,10 +18,26 @@ User: arn:aws:sts::211107604526:assumed-role/CloudFormation-role-learning/AWSClo
 
 Resolution : Update CloudFormation Stack Role with Required Permissions,
 
-Below Errors due to syntax issue in resource template, 
+Below Errors due to syntax issue in resource template for VPC, 
 
 1. 	
 Failed to create changeset. Couldn't call cloudformation for stack: vpcstack and changeset: 
 cloudformation-auto-sync-62862cb8-7ebe-4f88-80c4-b4fbca080ff8 because of a validation error. 
 The error was Template format error: YAML not well-formed. (line 9, column 5) 
 (Service: AmazonCloudFormation; Status Code: 400; Error Code: ValidationError; Request ID: 4dc8ca76-97b5-4d15-903b-c0418114fb0c; Proxy: null)
+
+
+Errors while testing with Another Template subnet yaml
+
+1. Resource handler returned message: "The vpc ID 'vpc1id' does not exist 
+(Service: Ec2, Status Code: 400, Request ID: a27da101-04de-47dc-8797-1fb1013814fa) (SDK Attempt Count: 1)"
+ (RequestToken: b7e4d786-bbd4-38d0-c1c7-da9e887e67fb, HandlerErrorCode: NotFound)
+
+
+Syntax ISsue :
+
+Resource handler returned message: "The vpc ID 'output.vpc1Id' does not exist (Service: Ec2, Status Code: 400, Request ID: 0d5b66bf-7d94-4e9f-a928-507e2e2d4b89) 
+
+(SDK Attempt Count: 1)" (RequestToken: a52fe67c-2bad-fba7-2005-2f8bcafd5d8a, HandlerErrorCode: NotFound)
+
+outputs should Outputs ( capital O)
