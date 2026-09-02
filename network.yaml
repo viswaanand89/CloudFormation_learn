@@ -36,7 +36,24 @@ Resources:
         Tags:
           - Key: Name
             Value: firstroutetable
-  
+   routetable2:
+      Type: AWS::EC2::RouteTable
+      Properties:
+        VpcId: !GetAtt vpc2.VpcId
+        Tags:
+          - Key: Name
+            Value: secondroutetable
+   subnetroutetableassociation1:
+      Type: AWS::EC2::SubnetRouteTableAssociation
+      Properties:
+        SubnetId: !Ref subnet1
+        RouteTableId: !Ref routetable1
+    subnetroutetableassociation2:
+      Type: AWS::EC2::SubnetRouteTableAssociation
+      Properties:
+        SubnetId: !Ref subnet2
+        RouteTableId: !Ref routetable2
+   
   
 
 Outputs:
