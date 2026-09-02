@@ -48,7 +48,7 @@ Resources:
       Properties:
         SubnetId: !Ref subnet1
         RouteTableId: !Ref routetable1
-    subnetroutetableassociation2:
+   subnetroutetableassociation2:
       Type: AWS::EC2::SubnetRouteTableAssociation
       Properties:
         SubnetId: !Ref subnet2

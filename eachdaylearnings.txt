@@ -1,0 +1,5 @@
+02-Sept-2026 :
+
+Scenario 1 Try :
+
+From GitSync Cloudformation Template calling of another reference template containing resources required for provision
