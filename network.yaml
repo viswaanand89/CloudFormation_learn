@@ -29,6 +29,53 @@ Resources:
       Tags:
         - Key: Name
           Value: secondsubnet
+   routetable1:
+      Type: AWS::EC2::RouteTable
+      Properties:
+        VpcId: !Ref vpc1
+        Tags:
+          - Key: Name
+            Value: firstroutetable
+   routetable2:
+      Type: AWS::EC2::RouteTable
+      Properties:
+        VpcId: !GetAtt vpc2.VpcId
+        Tags:
+          - Key: Name
+            Value: secondroutetable
+   subnet1RouteTableAssociation:
+      Type: AWS::EC2::SubnetRouteTableAssociation
+      Properties:
+        SubnetId: !Ref subnet1
+        RouteTableId: !Ref routetable1
+        Tags:
+          - Key: Name
+            Value: firstsubnetroutetableassociation
+   subnet2RouteTableAssociation:
+      Type: AWS::EC2::SubnetRouteTableAssociation
+      Properties:
+        SubnetId: !Ref subnet2
+        RouteTableId: !Ref routetable2
+        Tags:
+         - Key: Name
+           Value: secondsubnetroutetableassociation
+   securitygroup1:
+      Type: AWS::EC2::SecurityGroup
+      Properties:
+        GroupDescription: first security group
+        VpcId: !Ref vpc1
+        Tags:
+          - Key: Name
+            Value: firstsecuritygroup
+   securityrules:
+      Type: AWS::EC2::SecurityGroupIngress
+      Properties:
+        GroupId: !Ref securitygroup1
+        IpProtocol: tcp
+        FromPort: 22
+        ToPort: 22
+        CidrIp: 0.0.0.0/0
+  
 
 Outputs:
   vpc1id:

@@ -59,6 +59,7 @@ Resources:
         Properties:
             Propertyname: value
 
+Small Experiment on renaming resource template yaml results in "Stack Already in Sync" because underlying infra resource params no changes
 ----------
 Nested Stacks : https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html
 Its just like a Stack within a stack
