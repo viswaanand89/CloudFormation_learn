@@ -3,3 +3,8 @@
 Scenario 1 Try :
 
 From GitSync Cloudformation Template calling of another reference template containing resources required for provision
+
+Resources attempted for provisionig,
+
+1. RouteTable
+2. Subnet RouteTable Association

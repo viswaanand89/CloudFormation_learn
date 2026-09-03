@@ -65,6 +65,8 @@ Nested Stacks : https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/u
 Its just like a Stack within a stack
 
 
+
+
 Wait Condition Usage : we can add a wait condition in the template to wait for certain time or the dependent resource sending signal,
 
 For More : https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-waitcondition.html
