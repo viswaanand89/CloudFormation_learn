@@ -6,3 +6,9 @@ Resources:
       TemplateURL: https://s3.amazonaws.com/cfn-template-viswa/vpc.yaml
       Parameters:
         cidrblock: 10.0.0.0/16
+  subnetStack:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      TemplateURL: https://s3.amazonaws.com/cfn-template-viswa/subnet.yaml
+      Parameters:
+        vpc1: !GetAtt myStackWithParams.Outputs.vpc1Id

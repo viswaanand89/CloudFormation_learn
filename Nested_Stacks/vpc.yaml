@@ -10,3 +10,7 @@ Resources:
       Tags:
         - Key: Name
           Value: firstvpcnested
+Outputs:
+  vpc1Id:
+    Description: VPC ID of first vpc
+    Value: !Ref vpc1
