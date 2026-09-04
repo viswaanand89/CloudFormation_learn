@@ -8,3 +8,9 @@ Resources attempted for provisionig,
 
 1. RouteTable
 2. Subnet RouteTable Association
+
+04-Sept-2026:
+
+Nested Stacks 
+
+Added Parent Stack with references to vpc and subnet yaml , published them to S3
