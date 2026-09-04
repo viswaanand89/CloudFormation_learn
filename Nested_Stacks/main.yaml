@@ -3,6 +3,6 @@ Resources:
   myStackWithParams:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: https://s3.amazonaws.com/cfn-template-viswa/vpc.yaml
+      TemplateURL: https://s3.amazonaws.com/cfn-template-vis/vpc.yaml
       Parameters:
         cidrblock: 10.0.0.0/16
