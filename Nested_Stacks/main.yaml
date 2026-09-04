@@ -13,3 +13,7 @@ Resources:
       Parameters:
         vpc1: !GetAtt myStackWithParams.Outputs.vpc1Id
         subnet1Cidr: 10.0.1.0/24
+Outputs:
+  vpc1Id:
+    Description: VPC ID of first vpc
+    Value: !GetAtt myStackWithParams.Outputs.vpc1Id
