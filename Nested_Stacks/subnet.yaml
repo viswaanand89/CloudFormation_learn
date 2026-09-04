@@ -2,15 +2,15 @@ Parameters:
   vpc1:
     Type: String
     Description: VPC ID for the first subnet
-  vpc2:
+  subnet1Cidr:
     Type: String
-    Description: VPC ID for the second subnet
+    Description: CIDR block for the first subnet
 Resources:
     subnet1:
      Type: AWS::EC2::Subnet
      Properties:
       VpcId: !Ref vpc1
-      CidrBlock: 10.0.1.0/24
+      CidrBlock: !Ref subnet1Cidr
       Tags:
         - Key: Name
           Value: firstsubnetnested
