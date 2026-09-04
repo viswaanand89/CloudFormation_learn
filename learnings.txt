@@ -64,7 +64,7 @@ Small Experiment on renaming resource template yaml results in "Stack Already in
 Nested Stacks : https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html
 Its just like a Stack within a stack
 
-
+To reference Outputs between stacks in Nested Stacks : https://repost.aws/knowledge-center/cloudformation-nested-stacks-values
 
 
 Wait Condition Usage : we can add a wait condition in the template to wait for certain time or the dependent resource sending signal,

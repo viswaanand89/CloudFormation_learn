@@ -13,4 +13,4 @@ Resources:
 Outputs:
   vpc1Id:
     Description: VPC ID of first vpc
-    Value: !Ref vpc1
+    Value: !GetAtt vpc1.VpcId
